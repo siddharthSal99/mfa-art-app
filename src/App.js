@@ -1,13 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { Select, Button, MenuItem } from '@mui/material';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/navigation/Navbar';
+import HomePage from './pages/HomePage';
+import RandomPage from './pages/RandomPage';
+import SearchPage from './pages/SearchPage';
 
 function App() {
     return (
-        <div>
-            <Button>
-                Hello World
-            </Button>
-        </div>
+        <BrowserRouter>
+            <Navbar/>
+            <Routes>
+                <Route exact path='/' element={<HomePage/>}/>
+                <Route path='/random' element={<RandomPage/>}/>
+                <Route path='/search'element={<SearchPage/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
 

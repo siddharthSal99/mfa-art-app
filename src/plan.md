@@ -3,8 +3,9 @@
 This app will query the MET api and provide information about paintings in different ways
 ### Page 1: random art
 This page will generate an info display of a random piece of art based on "department" and optional "start date" and "end date"
-### Page 2: 
-###
+### Page 2: search art
+Use this page to search for art using a search term and a boolean-constructive search 
+
 ## Hooks and their functionality:
 ### useEffect
 we will use the useEffect hook to make the API call to the MET back
