@@ -10,12 +10,11 @@ import './App.css'
 function App() {
     let [history, setHistory] = useState([])
     let addToHistory = (art) => {
-        if(history.length > 25){
-            let newHistory = history.slice(1)
-            newHistory.push(art)
+        if(history.length >= 25){
+            let newHistory = [art, ...history.slice(0,-1)]
             setHistory(newHistory)
         } else {
-            setHistory([...history, art])
+            setHistory([art, ...history])
         }
     }
     return (

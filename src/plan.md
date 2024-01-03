@@ -24,3 +24,4 @@ maybe we can use useMemo to save the state of the app if we want to search for t
 *Like artworks and and have a recommended artwork navbar page
 *Accumulate apis from multiple museums
 *give GPT the json response with the art piece's data and have it write a paragraph that includes all the information in a nice summary.
+*retry artwork fetching when we get an artwork with no primary image
